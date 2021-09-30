@@ -20,7 +20,6 @@ class Dbkoneksi{
         return $this->koneksi;
     }
 } 
-
 //  $db_host = "localhost";
 // 	 $db_user = "root";
 // 	 $db_pass = "";

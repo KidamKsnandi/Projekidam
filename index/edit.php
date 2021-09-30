@@ -61,18 +61,3 @@ else
       </form>
    </body>
 </html>
-<!-- 
-<?php 	
-include 'sql.php';
-$db = new query();
-$data_barang = $_GET['id'];
-if(! is_null($data_barang))
-{
-	$data_barang = $db->get_tanggal($data_barang);
-}
-else
-{
-	header('location:tampil_data.php');
-}
-
-?>

@@ -1,5 +1,6 @@
 <?php 
 session_start();
+include 'cek.php';
 include '../sql.php';
 $data = new query();
 $tampil = $data->get_inventaris();
@@ -50,7 +51,7 @@ $tampil = $data->get_inventaris();
                 </div>
                 </div>
                 <div class="form-button">
-                <a type submit class="btn btn-danger" href="inventaris.php">Batal</a>
+                <a type submit class="btn btn-danger" href="gudang.php">Batal</a>
                 <button class="btn btn-warning" type="submit" name="simpan">Simpan</button>
                 </div>
               </div>

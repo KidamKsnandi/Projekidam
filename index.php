@@ -1,5 +1,6 @@
 <?php 
 session_start();
+include 'cek.php';
 include 'koneksi.php';
 ?>
 <!DOCTYPE html>

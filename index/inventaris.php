@@ -7,7 +7,7 @@
 <body>
 <link rel="stylesheet" href="../style/style1.css">
     <?php 
-      include "../cek.php";
+      include "cek.php";
       include "../sql.php";
       $user = new query();
     // $user = $koneksi->query("SELECT * FROM adminn  WHERE id='".$_COOKIE["id"]."'")->fetch_assoc();
@@ -84,7 +84,8 @@ function closeNav() {
          ?>
         <td>
         <a href="edit.php?id=<?= $inven['tanggal']; ?> " class="edit">Edit</a>
-        <a href="../proses.php?action=deleteinven&id=<?=$inven['tanggal']; ?>" class="hapus">Hapus</a>
+        <a href="../proses.php?action=deleteinven&id=<?=$inven['tanggal']; ?>" class="hapus"
+        onclick="return confirm('Apakah Anda Yakin Mau Mengambil data ini')">Hapus</a>
         </td></tr>
 </div>
 <?php

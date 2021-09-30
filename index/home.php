@@ -7,7 +7,7 @@
 <body>
 <link rel="stylesheet" href="../style/style1.css">
     <?php 
-      include "../cek.php";
+      include "cek.php";
       include "../sql.php";
       $user = new query();
     // $user = $koneksi->query("SELECT * FROM adminn  WHERE id='".$_COOKIE["id"]."'")->fetch_assoc();

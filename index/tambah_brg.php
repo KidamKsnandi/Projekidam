@@ -1,5 +1,6 @@
 <?php 
 session_start();
+include 'cek.php';
 include '../sql.php';
 $data = new query();
 $tampil = $data->get_lokasi();
